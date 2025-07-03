@@ -8,7 +8,7 @@ name: "my-first-java-mod"
 author: "xiaoheng"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "xiaoheng.MyFirstJavaMod"
 
 #the mod description as seen in the mod dialog
 description: "A Mindustry Java mod."
