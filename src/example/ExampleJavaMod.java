@@ -15,13 +15,13 @@ public class ExampleJavaMod extends Mod{
         Log.info("Loaded ExampleJavaMod constructor.");
 
         //listen for game load event
-        Events.on(ClientLoadEvent.class, e -&gt; {
+        Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
-            Time.runTask(10f, () -&gt; {
+            Time.runTask(10f, () -> {
                 BaseDialog dialog = new BaseDialog("frog");
                 dialog.cont.add("behold").row();
                 //mod sprites are prefixed with the mod name
-                dialog.cont.image(Core.atlas.find("my-first-java-mod-frog")).pad(20f).row();
+                dialog.cont.image(Core.atlas.find("emy-first-java-mod-frog")).pad(20f).row();
                 dialog.cont.button("I see", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
@@ -32,4 +32,5 @@ public class ExampleJavaMod extends Mod{
     public void loadContent(){
         Log.info("Loading some example content.");
     }
+
 }
