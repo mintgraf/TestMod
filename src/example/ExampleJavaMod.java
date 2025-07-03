@@ -21,7 +21,7 @@ public class ExampleJavaMod extends Mod{
                 BaseDialog dialog = new BaseDialog("frog");
                 dialog.cont.add("behold").row();
                 //mod sprites are prefixed with the mod name
-                dialog.cont.image(Core.atlas.find("emy-first-java-mod-frog")).pad(20f).row();
+                dialog.cont.image(Core.atlas.find("my-first-java-mod-frog")).pad(20f).row();
                 dialog.cont.button("I see", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
